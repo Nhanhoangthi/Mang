@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Từ điển</title>
+</head>
+
+<body>
+    <input type="text" name="" id="input">
+    <button onclick="search()">TIM KIEM</button>
+    <script>
+        function search() {
+            let input = document.getElementById("input").value;
+            let TA = ["love", "hate"];
+            let TV = ["yeu", "ghet"];
+            let flag = false;
+            for (let i = 0; i < TA.length; i++) {
+                if (input === TA[i]) {
+                    flag = true;
+                    alert(TV[i]);
+                }
+            }
+            if (flag == false) {
+                alert("không tìm thấy ");
+            }
+        }
+    </script>
+</body>
+
+</html>
