@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> từ điển</title>
+</head>
+
+<body>
+    <input type="text" name="" id="demo">
+    <button onclick="search()"> Tim Kiem</button>
+    <script>
+        function search() {
+            let input = document.getElementById("demo").value;
+            let TV = ["hát", "nhảy", "chạy", "thích"];
+            let TA = ["sing", "dance", "run", "like"];
+            let flag = false;
+            for (let i = 0; i < TV.length; i++) {
+                if (input === TV[i]) {
+                    flag = true;
+                    alert(TA[i]);
+                }
+            }
+            if (flag == false) {
+                alert(" không tìm thấy");
+            }
+        }
+    </script>
+</body>
+
+</html>
